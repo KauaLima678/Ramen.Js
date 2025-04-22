@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>DevFood</title>
+  </head>
+  <body>
+    <header>
+      <div class="navCont">
+        <i class="fa-solid fa-code navLogo"> Ramen.js</i>
+        <nav id="nav-desk">
+          <a href="#home" class="nav-item active">Início</a>
+        <a href="#menu" class="nav-item">Cardápio</a>
+          <a href="#testimonials" class="nav-item">Avaliações</a>
+        </nav>
+        <button class="btn-default">Peça aqui</button>
+        <button id="mobileBtn">
+          <i class="fa-solid fa-bars" id="mobileBtn"></i>
+        </button>
+      </div>
+
+      <div id="mobileMenu">
+        <ul id="mobileNavList">
+          <li class="navItem">
+            <a href="#home">Início</a>
+          </li>
+          <li class="navItem">
+            <a href="#cardapio">Cardapio</a>
+          </li>
+          <li class="navItem">
+            <a href="#avaliacoes">Avaliações</a>
+          </li>
+        </ul>
+        <button class="btn-default">Peça aqui</button>
+      </div>
+    </header>
+    <section id="home">
+      <div class="cont">
+        <h1 class="title">O sabor que vai até <span>você</span></h1>
+        <p class="description">
+          Pratos deliciosos, ingredientes selecionados e um toque especial em
+          cada refeição. Qualidade e sabor para qualquer momento, seja no
+          restaurante ou via delivery. Venha saborear!
+        </p>
+        <div class="contButtons">
+          <a href="#" class="btn-default">Ver Cardápio</a>
+          <a href="tel:+16997251263" id="phoneButton"
+            ><button class="btn-default">
+              <i class="fa-solid fa-phone"></i></button
+            >(16) 99725-1263</a
+          >
+        </div>
+        <div class="socialMedia_Buttons">
+          <a href="#" class="socialMediaButton"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a href="#" class="socialMediaButton"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="socialMediaButton"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="banner">
+        <img src="./imgs/hero2.png" alt="" />
+      </div>
+
+      <div class="shape"></div>
+    </section>
+
+    <section id="menu">
+      <h2 class="section-title">Cardápio</h2>
+      <h3 class="section-subtitle">Veja nossos Pratos especiais</h3>
+
+      <div class="dishes">
+        <div class="dish">
+          <div class="dish-heart">
+            <i class="fa-solid fa-heart heart"></i>
+          </div>
+          <img src="./imgs/dish.png" class="dishImage" alt="" />
+          <h3>Nigiri Tropical</h3>
+          <span class="dishDescription">
+            Arroz prensado com fatia de ananás fresco e ovas de tobiko — combinação agridoce e crocante.
+          </span>
+          <div class="dish-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+          <div class="dish-price">
+            <h4>R$ 20,00</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-heart">
+            <i class="fa-solid fa-heart heart"></i>
+          </div>
+          <img src="./imgs/dish2.png" class="dishImage" alt="" />
+          <h3>Bento Maki Seleção Especial</h3>
+          <span class="dishDescription">
+            Dez peças variadas (salmão, pepino e ovas), servidas com shoyu, gengibre em conserva e wasabi.
+          </span>
+          <div class="dish-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+          <div class="dish-price">
+            <h4>R$ 20,00</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-heart">
+            <i class="fa-solid fa-heart heart"></i>
+          </div>
+          <img src="./imgs/dish3.png" class="dishImage" alt="" />
+          <h3>Ramen Tonkotsu Clássico</h3>
+          <span class="dishDescription">
+            Caldo cremoso de ossos de porco, macarrão ao dente, fatias de chashu e ovo pochê.
+          </span>
+          <div class="dish-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+          <div class="dish-price">
+            <h4>R$ 20,00</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-heart">
+            <i class="fa-solid fa-heart heart"></i>
+          </div>
+          <img src="./imgs/dish4.png" class="dishImage" alt="" />
+          <h3>Uramaki Salmão & Avocado</h3>
+          <span class="dishDescription">
+            Rolinhos invertidos recheados com salmão e abacate, polvilhados com gergelim.
+          </span>
+          <div class="dish-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+          <div class="dish-price">
+            <h4>R$ 20,00</h4>
+            <button class="btn-default">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <img src="./imgs/chef2-removebg-preview.png" class="chefImg" />
+
+      <div class="testimonials_cont">
+        <h2 class="section-title">Depoimentos</h2>
+        <h3 class="section-subtitle">O que nossos clientes dizem sobre nós</h3>
+
+        <div class="feedbacks">
+          <div class="feedback">
+            <img src="./imgs//Usuario.png" alt="" />
+
+            <div class="feedback-content">
+                <div class="name">
+                    <p>
+                        Gabriel "ByteMaster"
+                        </p>
+                        <span class="stars">
+                            <i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i>
+                          </span>
+                </div>
+           
+                
+                <p class="text">
+                    “Ramen.js é o spot perfeito pra devs: Wi‑Fi turbo e um ramen quentinho que recarrega minha criatividade em instantes.”
+                </p>
+              </p>
+            </div>
+          </div>
+          <div class="feedback">
+            <img src="./imgs//Usuaria.png" alt="" />
+
+            <div class="feedback-content">
+                <div class="name">
+                    <p>
+                        Ana Costa
+                        </p>
+                        <span class="stars">
+                            <i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i>
+                          </span>
+                </div>
+           
+                
+                <p class="text">
+                    “No Ramen.js encontrei o ambiente ideal pra codar: ramen encorpado, café matcha energizante e internet estável — combinação perfeita pra zerar bugs e deadlines.”
+                </p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="buttonContent">
+            <button class="btn-default">Ver mais depoimentos</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <img src="./imgs/wave.svg" alt="">
+
+      <div class="footerItems">
+        <div class="copyRight">
+          <span>&copy; 2023 Ramen.js</span>
+          </div>
+        
+  
+          <div class="socialMediaFooter">
+            <a href="#" class="socialMediaButton"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="#" class="socialMediaButton"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="socialMediaButton"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+  
+      </div>
+
+      
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
